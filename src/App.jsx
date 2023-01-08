@@ -1,18 +1,17 @@
 import React from "react"
-
-import img from "./winter.jpg"
+import DiscordSidebar from './DiscordSidebar'
+import Channels from './Channels'
+import Dashboard from './Dashboard'
+import Sidebar from "./Sidebar"
 
 import "./index.css"
 
 const App = () => {
 	return (
-		<div>
-			<h1 className='text-3xl font-bold line-through bg-red-600 rounded w-sm font-mono'>Hello world!</h1>
-			<img
-				src={img}
-				alt=''
-				className="aspect-video bg-red-1"
-			/>
+		<div className="flex w-screen h-screen overflow-hidden">
+			<Sidebar />
+			<Channels />
+			<Dashboard />
 		</div>
 	)
 }
